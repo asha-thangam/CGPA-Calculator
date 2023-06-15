@@ -36,7 +36,7 @@ form{
     margin: 0 auto;
     width: 600px;
 }
-#add,#calc{
+#add,#calc,#cancel{
     border: none;
     color:white;
     background-color: #36d794;
@@ -47,7 +47,8 @@ form{
     border-radius: 5px;
 }
 #calc:hover,
-#add:hover{
+#add:hover,
+#cancel:hover{
     background-color: #2eaf79;
 }
 #calc{

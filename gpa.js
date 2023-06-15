@@ -53,13 +53,25 @@ function addCourse()
             f.appendChild(Form);
             cc+=1;
         }
+        //calculate button
         let calcBtn = document.createElement("button");
-      calcBtn.innerHTML = "Calculate GPA";
-      calcBtn.onclick = calculate;
-      calcBtn.id = "calc";
+        calcBtn.innerHTML = "Calculate GPA";
+        calcBtn.onclick = calculate;
+        calcBtn.id = "calc";
+        //cancel button
+        let cancelBtn = document.createElement("button");
+        cancelBtn.innerHTML = "Cancel";
+        cancelBtn.id = "cancel";
+        cancelBtn.onclick= () =>{
+            while(f.firstChild){
+                f.removeChild(f.firstChild);
+            }
+            cc=1;
+        }
       
-      // Append the "Calculate GPA" button to the HTML document
-      document.getElementById("gform").appendChild(calcBtn);
+        // Append the "Calculate GPA" button to the HTML document
+        document.getElementById("gform").appendChild(calcBtn);
+        document.getElementById("gform").appendChild(cancelBtn);
     }
     else{
         alert("Enter Atleast one subject!");
