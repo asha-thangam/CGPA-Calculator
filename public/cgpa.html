@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./cgpa.css">
-    <title>CGPA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>CGPA Calculator</title>
 </head>
 <body>
+    <div class="dropdown">
+        <button class="btn">
+            <i class="bi bi-list"></i>
+        </button>
+    <div class="dropdown-content">
+        <a href="./index.html">Home</a>
+        <a href="./gpa.html">GPA</a>
+    </div>
+</div>
     <div class="container">
         <h3>Calculate your CGPA Here!</h3>
         <input type="number" id="n-sem" placeholder="No of Semesters">
         <button onclick="createSem()">Submit</button>
         <div id="sem"></div>
+        <div id="cgpa-container"></div>
+        <h3 id="cgpa"></h3>
     </div>
     <script src="./cgpa.js"></script>
 </body>
